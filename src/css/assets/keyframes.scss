@@ -1,0 +1,227 @@
+// RUN LINE
+@keyframes run-line {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+// ROTATIONS
+@keyframes rotations {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes top-bottom {
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(300%);
+    }
+}
+@keyframes top-bottom-second {
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(1000%);
+    }
+}
+
+@keyframes left-right {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(70%);
+    }
+}
+
+@keyframes bottom-top {
+    0% {
+        transform: translateY(300%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+@keyframes bottom-top-second {
+    0% {
+        transform: translateY(600px);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+@keyframes right-left {
+    0% {
+        transform: translateX(70%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes under-title {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(350%);
+    }
+}
+
+@keyframes circle-rotate {
+    from {
+        transform: rotate(0turn) translateY(-350px) translateY(450%) rotate(1turn)
+    }
+    
+    to {
+        transform: rotate(1turn) translateY(-350px) translateY(450%) rotate(0turn);
+    }
+}
+
+@keyframes circle-rotate-two {
+    from {
+        transform: rotate(0turn) translateY(200px) translateX(-200px) rotate(1turn)
+    }
+    
+    to {
+        transform: rotate(1turn) translateY(200px) translateX(-200px) rotate(0turn);
+    }
+}
+@keyframes circle-rotate-three {
+    from {
+        transform: rotate(0turn) translateX(-50px) translateX(-220px) rotate(1turn)
+    }
+    
+    to {
+        transform: rotate(1turn) translateX(-50px) translateX(-220px) rotate(0turn);
+    }
+}
+@keyframes circle-rotate-four {
+    from {
+        transform: rotate(0turn) translateY(-200px) translateX(-200px) rotate(1turn)
+    }
+    
+    to {
+        transform: rotate(1turn) translateY(-200px) translateX(-200px) rotate(0turn);
+    }
+}
+@keyframes circle-rotate-five {
+    from {
+        transform: rotate(0turn) translateY(-350px) translateY(50%) rotate(1turn)
+    }
+    
+    to {
+        transform: rotate(1turn) translateY(-350px) translateY(50%) rotate(0turn);
+    }
+}
+@keyframes circle-rotate-six {
+    from {
+        transform: rotate(0turn) translateY(-200px) translateX(200px) rotate(1turn)
+    }
+
+    to {
+        transform: rotate(1turn) translateY(-200px) translateX(200px) rotate(0turn);
+    }
+}
+@keyframes circle-rotate-seven {
+    from {
+        transform: rotate(0turn) translateX(-50px) translateX(350px) rotate(1turn);
+    }
+
+    to {
+        transform: rotate(1turn) translateX(-50px) translateX(350px) rotate(0turn);
+    }
+}
+@keyframes circle-rotate-eight {
+    from {
+        transform: rotate(0turn) translateY(200px) translateX(200px) rotate(1turn)
+    }
+
+    to {
+        transform: rotate(1turn) translateY(200px) translateX(200px) rotate(0turn);
+    }
+}
+@keyframes rotate-square {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+@keyframes run-square {
+    0%   {
+        right:600px; 
+        bottom:0px;
+    }
+    25%  {
+        right:0px; 
+        bottom:0px;
+    }
+    50%  {
+        right: 0px; 
+        bottom:190px;
+    }
+    75%  {
+        right: 600px; 
+        bottom:190px;
+    }
+    100% {
+        right:600px; 
+        bottom:0px;
+    }
+}
+@media (max-width: $ss_laptop) {
+    @keyframes under-title {
+        0% {
+            transform: translateX(0%);
+        }
+    
+        100% {
+            transform: translateX(100%);
+        }
+    }
+    @keyframes run-square {
+        0%   {
+            right:320px; 
+            bottom:0px;
+        }
+        25%  {
+            right:0px; 
+            bottom:0px;
+        }
+        50%  {
+            right: 0px; 
+            bottom:230px;
+            background: #65C19C;
+        }
+        75%  {
+            right: 320px; 
+            bottom:230px;
+        }
+        100% {
+            right:320px; 
+            bottom:0px;
+        }
+    }
+}

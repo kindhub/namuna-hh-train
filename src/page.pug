@@ -1,0 +1,155 @@
+extends ./pug/layout
+
+block content
+	<!-- START HEADER -->
+	header.header 
+		.container 
+			.header__inner 
+				.header__logo 
+					img.logo(src="images/logo.svg", alt="") 
+					.header__logo-text Застройщик <br>нового поколения 
+				.header__btn.vacancy-btn Хочу тут работать!
+	<!-- END HEADER -->
+
+	<!-- START FIRST SCREEN -->
+	.section.first-screen
+		.first-screen__run-line  
+			.first-screen__run-line-wrapper
+				.first-screen__run-line-img-wrapper
+					img.first-screen__run-line-img(src="images/first-screen/run-line.svg", alt="") 
+					img.first-screen__run-line-img(src="images/first-screen/run-line.svg", alt="") 	
+					img.first-screen__run-line-img(src="images/first-screen/run-line.svg", alt="") 
+					img.first-screen__run-line-img(src="images/first-screen/run-line.svg", alt="") 
+				.first-screen__run-line-img-wrapper
+					img.first-screen__run-line-img(src="images/first-screen/run-line.svg", alt="") 
+					img.first-screen__run-line-img(src="images/first-screen/run-line.svg", alt="") 
+					img.first-screen__run-line-img(src="images/first-screen/run-line.svg", alt="") 
+					img.first-screen__run-line-img(src="images/first-screen/run-line.svg", alt="") 
+		.container 
+			.first-screen__inner 
+				.first-screen__text 
+					p Компания Namuna Development с момента основания стремится не просто строить здания, но и создавать территорию, оснащённую развитой инфраструктурой.  Нашими отличительными чертами являются использование инновационных технологий при проектировании жилых комплексов и формирование культуры нового образа жизни.  
+					p Наша цель — это проекты, актуальные во все времена, где каждый будет чувствовать себя комфортно и безопасно. 
+					p В настоящее время, когда рынок недвижимости переживает ренессанс, Namuna Development предлагает жителям городов благоустроенную жилую территорию, а также качественное жильё.
+				.first-screen__shapes
+					.first-screen__half-circle-wrapper
+						img.first-screen__half-circle-img(src="images/first-screen/half-circle.svg", alt="")
+					.first-screen__namuna-img-wrapper
+						img.first-screen__namuna-img(src="images/first-screen/namuna-img.svg", alt="")
+					.first-screen__square-in-circle-wrapper
+						img.first-screen__square-in-circle(src="images/first-screen/square-in-circle.svg", alt="")
+					.first-screen__empty-square
+						.first-screen__empty-square-wrapper
+							img.first-screen__empty-square-img(src="images/first-screen/empty-grey-square.svg", alt="")
+					.first-screen__green-circle
+						.first-screen__green-circle-wrapper
+							img.first-screen__green-circle-img(src="images/first-screen/green-circle.svg", alt="")
+					.first-screen__small-circle 
+						.first-screen__small-circle-wrapper
+							img.first-screen__small-circle-img(src="images/first-screen/small-green-circle.svg", alt="")
+					.first-screen__small-square
+						.first-screen__small-square-wrapper
+							img.first-screen__small-square-img(src="images/first-screen/small-grey-square.svg", alt="")
+	<!-- END FIRST SCREEN -->
+
+	<!-- START WHY WE -->
+	.section.section--long-pt.why-we 
+		.container
+			.title.title--long Почему именно <span>мы?<span> 
+			img.why-we__empty-square(src="images/why-we/empty-square.svg", alt="")
+			img.why-we__green-square(src="images/why-we/green-square.svg", alt="")
+			img.why-we__grey-circle(src="images/why-we/grey-circle.svg", alt="")
+			img.why-we__border-dashed(src="images/why-we/border-dashed.svg", alt="")
+			.why-we__inner
+				.why-we__center-img-wrapper 
+					img.why-we__center-img(src="images/why-we/namuna-dev.svg", alt="")
+				.why-we__circle.why-we__circle--one
+					.why-we__circle-text Руководители с опытом работы более 10 лет
+				.why-we__circle.why-we__circle--two
+					.why-we__circle-text <span>500+</span> <br>сотрудников
+				.why-we__circle.why-we__circle--three
+					.why-we__circle-text Мотивационные тренинги
+				.why-we__circle.why-we__circle--four
+					.why-we__circle-text Достижение поставленных целей
+				.why-we__circle.why-we__circle--five 
+					.why-we__circle-text Оплачиваемая стажировка
+				.why-we__circle.why-we__circle--six 
+					.why-we__circle-text Достойная оплата труда
+				.why-we__circle.why-we__circle--seven 
+					.why-we__circle-text Официальное трудоустройство
+				.why-we__circle.why-we__circle--eight 
+					.why-we__circle-text Сплочённый коллектив
+	<!-- END WHY WE -->
+
+	<!-- START GET-INTO-TEAM -->
+	.section.section--long-pt.get-into-team
+		.container 
+			.title.title--medium.title--left Как попасть к нам <br><span>в команду?<span> 
+			.get-into-team__btn.vacancy-btn Посмотреть вакансии
+		img.get-into-team__top-right-img(src="images/get-into-team/top-right-img.svg", alt="")
+		.get-into-team__inner
+			.get-into-team__icons
+				+team-icon("click", "Отклик на вакансию")
+				+team-icon("interview", "Собеседование")
+				+team-icon("offer", "Job offer")
+			.get-into-team__icons
+				+team-icon("doc", "Сбор документов")
+				+team-icon("sign", "Оформление в штат")
+				+team-icon("worker", "Выход на работу")
+			.get-into-team__zigzag-line 
+				img.get-into-team__zigzag-line-img(src="images/get-into-team/line.svg", alt="")
+				img.get-into-team__zigzag-line-1(src="images/get-into-team/zigzag-1.svg", alt="")
+				img.get-into-team__zigzag-turn-1(src="images/get-into-team/turn-1.svg", alt="")
+				img.get-into-team__zigzag-line-2(src="images/get-into-team/zigzag-2.svg", alt="")
+				img.get-into-team__zigzag-turn-2(src="images/get-into-team/turn-2.svg", alt="")
+				img.get-into-team__zigzag-line-3(src="images/get-into-team/zigzag-3.svg", alt="")
+	<!-- END GET-INTO-TEAM -->
+
+	<!-- START WELCOME -->
+	.section.section--long-pt.welcome 
+		.container 
+			.title.title--medium-mb.title--right добро пожаловать в нашу <span>команду</span>
+		.welcome__inner 
+			.welcome__img-wrapper 
+				img.welcome__img(src="images/welcome/photo-1.jpg", alt="")
+			.welcome__img-wrapper 
+				img.welcome__img(src="images/welcome/photo-2.jpg", alt="")
+			.welcome__img-wrapper 
+				img.welcome__img(src="images/welcome/photo-3.jpg", alt="")
+			.welcome__img-wrapper 
+				img.welcome__img(src="images/welcome/big-square.svg", alt="")
+			.welcome__img-wrapper 
+				img.welcome__img(src="images/welcome/small-square.svg", alt="")
+	<!-- END WELCOME -->
+
+	<!-- START VALUES -->
+	.section.section--long-pt.values 
+		.container
+			.title.title--medium Ценности <span>компании<span>
+			.values__inner
+				.values__item
+					.values__img-wrapper 
+						img.values__img(src="images/values/img-1.jpg", alt="")
+					.values__text <span>Профессионализм</span> — все сотрудники нашей компании профессионалы своего дела и демонстрируют свою компетентность во всех областях, касающихся рабочих вопросов. Мы постоянно совершенствуем свои знания и стремимся к лучшим результатам.
+				.values__item
+					.values__img-wrapper 
+						img.values__img(src="images/values/img-2.jpg", alt="")
+					.values__text <span>Ответственность</span> — наша компания честна перед законом, сотрудниками, партнёрами и клиентами. Мы несём полную ответственность за качество предоставляемых услуг.
+				.values__item
+					.values__img-wrapper 
+						img.values__img(src="images/values/img-3.jpg", alt="")
+					.values__text <span>Сотрудники</span> — это наша огромная семья, которой мы создаём современные условия труда, поддержку и профессиональный рост. Наша сила – в единстве!
+			.values__circle-img-wrapper 
+				img.values__circle-img(src="images/values/green-circle.svg", alt="")
+	<!-- END VALUES -->
+
+	<!-- START PILOT PROJECT -->
+	.section.section--long-pt.pilot-project 
+		.container 
+			.title.title--short Наш пилотный <span>проект</span>
+			.pilot-project__inner
+				.pilot-project__text
+					p <span>ЖК NUR</span> — это первый проект компании Namuna Development. Квартал добрососедства воплощает в себе концепцию «город в городе», где жильцы смогут найти абсолютно всё, что им нужно для полноценного образа жизни. Над проектом работают профессионалы своего дела, у которых есть возможность проходить курсы по повышению квалификации в других странах. Наша команда постоянно совершенствует свои знания и стремится к лучшим результатам. Все сотрудники — это огромная семья, для которой мы создаём современные условия труда и поддержку. <br>Наша сила — в единстве!
+				.pilot-project__video-wrapper 
+					+video("W-2xqpZeCHE", "images/video-img.jpg")
+	<!-- END PILOT PROJECT -->

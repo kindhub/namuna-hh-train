@@ -1,0 +1,666 @@
+@import "./../assets/vars";
+@import "./../assets/keyframes";
+
+// BREAKPOINT LAPTOP
+@media (max-width: $ss_laptop) {
+	.container {
+		max-width: 880px;
+	}
+	.wrapper {
+		font-size: 16px;
+	}
+	.title {
+		font-size: 28px;
+	}
+	.first-screen {
+		&__half-circle-wrapper {
+			display: none;
+		}
+		&__namuna-img-wrapper {
+			left: -25px;
+		}
+	}
+
+	.why-we {
+		&__empty-square {
+			display: none;
+		}
+
+		&__green-square {
+			display: none;
+		}
+
+		&__grey-circle {
+			display: none;
+		}
+
+		&__border-dashed {
+			left: 19.5%;
+		}
+		&__center-img-wrapper {
+			transform: translate(20px, -18px);
+		}
+	}
+	.get-into-team {
+		&__top-right-img {
+			width: 390px;
+		}
+		&__icon {
+			font-size: 2.5em;
+		}
+		&__item {
+			width: 130px;
+			height: 150px;
+		}
+		&__icon-wrapper {
+			width: 100px;
+			height: 100px;
+		}
+		&__icons:nth-child(2) {
+			padding-left: 330px;
+			padding-top: 55px;
+			gap: 96px;
+		}
+		&__zigzag-line-1 {
+			top: 137px;
+    		left: 190px;
+    		width: 530px;
+		}
+		&__zigzag-line-2 {
+			top: 236px;
+			left: 309px;
+			width: 410px;
+		}
+		&__zigzag-line-3{
+			width: 500px;
+    		top: 333px;
+    		left: 309px;
+		}
+		&__zigzag-turn-1 {
+			width: 55px;
+    		top: 137px;
+    		right: 157px;
+		}
+		&__zigzag-turn-2 {
+			width: 53px;
+    		top: 236px;
+    		left: 257px;
+		}
+	}
+	.welcome{
+		&__inner{
+			min-height: 750px;
+		}
+		&__img-wrapper{
+			&:nth-child(1){
+				width: 62%;
+				&::before{
+					width: 140px;
+					bottom: 70px;
+					left: 120px;
+				}
+			}
+			&:nth-child(2){
+				top: 140px;
+				width: 60%;
+			}
+			&:nth-child(3){
+				left: 70px;
+				width: 60%;
+			}
+			&:nth-child(4){
+				bottom: 90px;
+				right: 140px;
+			}
+		}
+	}
+	.values__circle-img-wrapper {
+		top: 60px;
+		right: -25px;
+	}
+}
+
+// BREAKPOINT TABLET
+@media (max-width: $ss_tablet) {
+	.wrapper {
+		font-size: 15px;
+	}
+	.container {
+		padding: 0 15px;
+	}
+	.header__btn {
+		padding: 12px 30px;
+	}
+	.first-screen {
+		margin-top: 315px;
+		background-image: none;
+		&__text {
+			background-color: #65C19C;
+			padding: 65px 40px 20px 147px;
+			width: 103%;
+		}
+		&__small-square {
+			display: none;
+		}
+		&__small-circle {
+			display: none;
+		}
+		&__green-circle {
+			display: none;
+		}
+		&__empty-square {
+			display: none;
+		}
+		&__square-in-circle-wrapper {
+			width: 35%;
+			right: 70px;
+			top: -280px;
+		}
+		&__run-line {
+			top: -200px;
+		}
+		&__run-line-img{
+			width: 18%;
+		}
+		&__run-line-img-wrapper{
+			gap: 50px;
+		}
+		&__namuna-img-wrapper {
+			width: 220px;
+			left: 15px;
+			top: -153px;
+		}
+	}
+	.why-we {
+		&__circle {
+			width: 100px;
+			height: 100px;
+			padding: 15px 6px;
+			font-size: 10px;
+			animation: none;
+			& span {
+				font-weight: 600;
+				font-size: 20px;
+			}
+			&--one {
+				left: calc(50% - 50px);
+				top: -37%;
+			}
+	
+			&--two {
+				left: 68%;
+				top: -17%;
+			}
+	
+			&--three {
+				left: 78%;
+				top: 32%;
+			}
+	
+			&--four {
+				left: 69%;
+				top: 83%;
+			}
+	
+			&--five {
+				left: calc(50% - 50px);
+				top: 104.5%;
+			}
+	
+			&--six {
+				left: 14%;
+				top: 84%;
+			}
+	
+			&--seven {
+				left: 2.5%;
+				top: 33%;
+			}
+	
+			&--eight {
+				left: 14%;
+				top: -15%;
+			}
+		}
+		&__center-img-wrapper {
+			transform: none;
+			width: 315px;
+			height: 315px;
+			margin-top: 170px;
+		}
+		&__border-dashed {
+			left: 13%;
+			top: 20%;
+			width: 450px;
+		}
+	}
+	.title {
+		width: 70%;
+		&--left {
+			margin-left: 0px;
+		}
+	}
+	.get-into-team {
+		&__inner {
+			background-color: #414953;
+			display: flex;
+			flex-wrap: wrap;
+			padding: 50px;
+		}
+		&__top-right-img {
+			display: none;
+		}
+		&__btn {
+			top: 0px;
+			right: 0px;
+			color: #65C19C;
+			padding: 10px 20px;
+			border: 1px solid #65C19C;
+		}
+		&__icon {
+			font-size: 2em;
+		}
+		&__icon-title{
+			margin-top: 5px;
+			font-size: 12px;
+			line-height: 14px;
+		}
+		&__item {
+			width: 75px;
+			height: 100px;
+		}
+		&__icon-wrapper {
+			width: 70px;
+			height: 70px;
+		}
+		&__icons{ 
+			padding: 0;
+			&:nth-child(2) {
+				padding: 75px 0 0 80px;
+				gap: 96px;
+			}
+		}
+		&__zigzag-line-img{
+			display: block;
+			position: absolute;
+			top: 85px;
+			left: 50px;
+			width: 80%;
+		}
+		&__zigzag-line-1,
+		&__zigzag-line-2,
+		&__zigzag-line-3,
+		&__zigzag-turn-1,
+		&__zigzag-turn-2 {
+			display: none;
+		}
+	}
+	.welcome{
+		&__inner{
+			min-height: 500px;
+		}
+		&__img-wrapper{
+			&:nth-child(1){
+				&::before{
+					display: none;
+				}
+			}
+			&:nth-child(2){
+				top: 90px;
+			}
+			&:nth-child(3){
+				left: 50px;
+				bottom: 0;
+				height: 210px;
+			}
+			&:nth-child(4){
+				display: none;
+			}
+			&:nth-child(5){
+				display: none;
+			}
+		}
+	}
+	.values__circle-img-wrapper {
+		top: 60px;
+		right: 0;
+	}
+	.pilot-project{
+		&__text{
+			width: 100%;
+		}
+	}
+}
+
+// BREAKPOINT SM TABLET
+@media (max-width: $ss_sm_tablet) {
+	.wrapper {
+		font-size: 14px;
+	}
+	.title {
+		font-size: 25px;
+	}
+	.first-screen {
+		margin-top: 250px;
+		// height: 340px;
+		&__namuna-img-wrapper {
+			top: -200px;
+		}
+		&__text {
+			padding: 50px 10px 20px 80px;
+		}
+	}
+	.why-we {
+		&__inner{
+			width: auto;
+		}
+		&__center-img-wrapper {
+			width: 250px;
+			height: 250px;
+			margin: 170px auto;
+		}
+		&__center-img{
+			width: 65%;
+		}
+		&__border-dashed {
+			width: 71%;
+		}
+		// &__circle {
+		// 	&--one {
+		// 		top: 26%;
+		// 	}
+	
+		// 	&--two {
+		// 		top: 35%;
+		// 	}
+	
+		// 	&--three {
+		// 		left: 81%;
+		// 	}
+	
+		// 	&--four {
+		// 		left: 70%;
+		// 		top: 86%;
+		// 	}
+	
+		// 	&--five {
+		// 		left: 43%;
+		// 		top: 102%;
+		// 	}
+	
+		// 	&--six {
+		// 		left: 16%;
+		// 		top: 90%;
+		// 	}
+	
+		// 	&--seven {
+		// 		left: 6%;
+		// 		top: 60%;
+		// 	}
+	
+		// 	&--eight {
+		// 		left: 16%;
+		// 		top: 30%;
+		// 	}
+		// }
+	}
+	.get-into-team {
+		&__inner {
+			background-color: #414953;
+			display: flex;
+			flex-wrap: wrap;
+			padding: 50px;
+		}
+		&__top-right-img {
+			display: none;
+		}
+		&__btn {
+			top: 0px;
+			right: 0px;
+			color: #65C19C;
+			padding: 10px 20px;
+			border: 1px solid #65C19C;
+		}
+		&__icon {
+			font-size: 2em;
+		}
+		&__icon-title{
+			margin-top: 3px;
+		}
+		&__item {
+			width: 75px;
+			height: 100px;
+		}
+		&__icon-wrapper {
+			width: 70px;
+			height: 70px;
+		}
+		&__icons{ 
+			padding: 0;
+			gap: 75px;
+			&:nth-child(2) {
+				padding: 0;
+				margin-top: 55px;
+				margin-left: 22%;
+				gap: 65px;
+			}
+		}
+		&__zigzag-line-img{
+			width: 440px;
+		}
+	}
+	.welcome{
+		&__img-wrapper{
+			&:nth-child(1){
+				height: auto;
+			}
+			&:nth-child(2){
+				top: 120px;
+				height: auto;
+			}
+			&:nth-child(3){
+				height: auto;
+			}
+		}
+	}
+	.values{ 
+		&__inner{
+			justify-content: center;
+		}
+		&__item{
+			width: 80%;
+			text-align: center;
+		}
+		&__item + &__item{
+			margin-top: 20px;
+		}
+		&__circle-img-wrapper {
+			display: none;
+	    }
+	}
+}
+
+// BREAKPOINT PHONE
+@media (max-width: $ss_phone) {
+	.wrapper {
+		width: calc(100% + 30px);
+		margin: 0 -15px;
+	}
+	.title{
+		font-size: 17px;
+		width: 70%;
+		&::before {
+			width: 80px;
+		}
+		&--long {
+			&,
+			&-mb {
+				margin-bottom: 22px;
+			}
+		}
+		&--medium {
+			&,
+			&-mb {
+				margin-bottom: 30px;
+			}
+		}
+	}
+	.header {
+		padding-top: 20px;
+		&__logo{
+			width: 50%;
+		}
+		&__logo-text {
+			font-size: 14px;
+			margin-top: 20px;
+		}
+		&__logo-text::before {
+			top: -10%;
+		}
+	
+		&__btn {
+			padding: 10px;
+			height: 40px;
+			line-height: 15px;
+			font-size: 12px;
+		}
+	}
+	.first-screen{
+		margin-top: 220px;
+		// min-height: 340px;
+		&__square-in-circle-wrapper {
+			right: 15px;
+			top: -190px;
+		}
+		&__run-line-img{
+			width: 14%;
+		}
+		&__run-line-img-wrapper{
+			gap: 20px;
+		}
+		&__namuna-img-wrapper {
+			width: 160px;
+			top: -180px;
+		}
+		&__text{
+			padding: 30px;
+			width: 100%;
+		}
+	}
+	.why-we {
+		&__center-img-wrapper {
+			width: 180px;
+			height: 180px;
+			margin: 170px auto;
+		}
+		&__center-img{
+			width: 50%;
+		}
+		&__border-dashed {
+			width: 250px;
+			left: calc(50% - 125px);
+    		top: 94px;
+		}
+		&__circle {
+			width: 70px;
+			height: 70px;
+			line-height: 12px;
+			font-size: 8px;
+			&--one {
+				top: -41%;
+				left: calc(50% - 35px);
+			}
+	
+			&--two {
+				top: -18%;
+				left: 62%;
+			}
+	
+			&--three {
+				left: 71%;
+				top: 31%;
+			}
+	
+			&--four {
+				left: 63%;
+				top: 77%;
+			}
+	
+			&--five {
+				left: calc(50% - 35px);
+				top: 100%;
+			}
+	
+			&--six {
+				left: 23%;
+				top: 77%;
+			}
+	
+			&--seven {
+				left: 14%;
+				top: 30%;
+			}
+	
+			&--eight {
+				left: 23%;
+				top: -18%;
+			}
+		}
+	}
+	.get-into-team {
+		&__inner {
+			padding: 20px;
+			justify-content: center;
+		}
+		&__btn {
+			position: relative;
+			width: 200px;
+			margin: 0 auto 20px;
+			text-align: center;
+		}
+		&__icon {
+			font-size: 1.5em;
+		}
+		&__icon-title{
+			margin-top: 10px;
+		}
+		&__icon-wrapper {
+			width: 50px;
+			height: 50px;
+		}
+		&__icons{ 
+			gap: 20px;
+			&:nth-child(2) {
+				padding: 0;
+				margin-top: 20px;
+				margin-left: 0;
+				gap: 20px;
+			}
+		}
+		&__zigzag-line-img{
+			display: none;
+		}
+	}
+	.welcome{
+		&__img-wrapper{
+			position: relative;
+			&:nth-child(1){
+				width: 90%;
+				margin: 0 auto;
+			}
+			&:nth-child(2){
+				width: 90%;
+				margin: 20px auto;
+				top: 0;
+			}
+			&:nth-child(3){
+				left: 0;
+				margin: 0 auto;
+				width: 90%;
+			}
+		}
+	}
+	.video__play-btn {
+		font-size: 3em;
+	}
+}
